@@ -123,3 +123,6 @@ Enemy actions are selected using simple automatic logic.
 ## 10. Project Goal
 
 To develop a functional turn-based RPG prototype demonstrating skills in game design, programming logic, and project structuring using Godot Engine.
+
+---
+**This document describes the game design, mechanics, and overall structure of the project.**
