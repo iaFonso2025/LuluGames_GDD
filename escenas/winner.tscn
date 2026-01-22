@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7kue6p1slwqr"]
+
+[ext_resource type="Texture2D" uid="uid://ejrlt2a3vu63" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/Gemini_Generated_Image_twqffltwqffltwqf-removebg-preview.png" id="1_kpgn6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GeminiGeneratedImageTwqffltwqffltwqfRemovebgPreview" type="Sprite2D" parent="."]
+position = Vector2(562, 321)
+texture = ExtResource("1_kpgn6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(561, 330)
+zoom = Vector2(2.69, 1.3)

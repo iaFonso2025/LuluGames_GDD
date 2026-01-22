@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://l6su7s7e5th5"]
+
+[ext_resource type="Texture2D" uid="uid://cahdcjop4eopo" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/gameOver.png" id="1_6mdw6"]
+[ext_resource type="Script" uid="uid://cc1xyj5w5r3hp" path="res://scripts/game_over.gd" id="1_houqk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 1.488
+anchor_bottom = 2.4750001
+offset_right = -0.17602539
+offset_bottom = 0.19995117
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_houqk")
+
+[node name="GameOver" type="Sprite2D" parent="."]
+position = Vector2(908.00006, 812)
+scale = Vector2(2.055664, 1.9169921)
+texture = ExtResource("1_6mdw6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(872, 844)
+zoom = Vector2(0.66, 0.415)

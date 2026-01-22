@@ -1,0 +1,14 @@
+res://escenas/winner.tscn
+res://escenas/arena.tscn
+res://scripts/mob.gd
+res://escenas/acciones.gd
+res://escenas/game_over.gd
+res://escenas/intro.gd
+res://scripts/manager.gd
+res://scripts/player.gd
+res://escenas/acciones.tscn
+res://escenas/gameOver.tscn
+res://escenas/intro.tscn
+res://scripts/actions.gd
+res://scripts/game_over.gd
+res://scripts/intro.gd

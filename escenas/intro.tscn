@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://5atyndr6lgh1"]
+
+[ext_resource type="Script" uid="uid://rjfjpqbyj6tt" path="res://scripts/intro.gd" id="1_jhcfx"]
+[ext_resource type="Texture2D" uid="uid://t3yolx0r7a43" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/Banner_Slots.png" id="1_u650b"]
+[ext_resource type="Texture2D" uid="uid://dox700vawoe5b" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/sinFondo.png" id="2_xwtud"]
+[ext_resource type="Texture2D" uid="uid://c2jq6bclveatx" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/controles.png" id="3_xwtud"]
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1162.0
+offset_bottom = 646.0
+script = ExtResource("1_jhcfx")
+
+[node name="BannerSlots" type="Sprite2D" parent="."]
+position = Vector2(585.5, 322)
+scale = Vector2(6.296875, 3.5416667)
+texture = ExtResource("1_u650b")
+
+[node name="SinFondo" type="Sprite2D" parent="."]
+position = Vector2(557, 124.000015)
+scale = Vector2(0.4902344, 0.48535156)
+texture = ExtResource("2_xwtud")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(588, 322)
+
+[node name="Controles" type="Sprite2D" parent="."]
+position = Vector2(595, 443)
+scale = Vector2(0.6385613, 0.6003289)
+texture = ExtResource("3_xwtud")

@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2wbso377f0t8"]
+
+[ext_resource type="Script" uid="uid://bumo2bap2rdju" path="res://scripts/actions.gd" id="1_pmgqa"]
+
+[node name="Acciones" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_pmgqa")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.5
+offset_top = -58.5
+offset_right = 2.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+custom_minimum_size = Vector2(4, 4)
+layout_mode = 2
+
+[node name="B_atack_1" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Ataque liguero"
+
+[node name="B_atack_2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Ataque pesado"
+
+[node name="B_atack_3" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Ataque definitivo"
+
+[connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/B_atack_1" to="." method="_on_b_atack_1_button_down"]
+[connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/B_atack_2" to="." method="_on_b_atack_2_button_down"]
+[connection signal="button_down" from="PanelContainer/MarginContainer/VBoxContainer/B_atack_3" to="." method="_on_b_atack_3_button_down"]
