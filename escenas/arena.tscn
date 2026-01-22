@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8vj8fkaca0cy"]
+
+[ext_resource type="PackedScene" uid="uid://b7jxdspwtlxdr" path="res://escenas/mob.tscn" id="1_sym82"]
+[ext_resource type="PackedScene" uid="uid://ikirhn3h7m44" path="res://escenas/battle_scene.tscn" id="2_fvw1q"]
+[ext_resource type="PackedScene" uid="uid://45o72qb2n76y" path="res://escenas/player.tscn" id="2_qxv7v"]
+
+[sub_resource type="GDScript" id="GDScript_ow6xx"]
+script/source = "extends Node2D
+"
+
+[sub_resource type="QuadMesh" id="QuadMesh_vdlk5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ow6xx"]
+size = Vector2(365.875, 12.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvmcd"]
+size = Vector2(11, 228)
+
+[node name="pueblo" type="Node2D"]
+script = SubResource("GDScript_ow6xx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 37)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D"]
+position = Vector2(52.249992, -118.43751)
+scale = Vector2(363.50003, 237.12502)
+mesh = SubResource("QuadMesh_vdlk5")
+
+[node name="colision" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(53, -230)
+shape = SubResource("RectangleShape2D_ow6xx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(52.0625, -4)
+shape = SubResource("RectangleShape2D_ow6xx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-124.5, -122)
+shape = SubResource("RectangleShape2D_gvmcd")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(229, -82)
+shape = SubResource("RectangleShape2D_gvmcd")
+
+[node name="mob" parent="." instance=ExtResource("1_sym82")]
+position = Vector2(193, 8)
+battle_scene = ExtResource("2_fvw1q")
+
+[node name="player" parent="." instance=ExtResource("2_qxv7v")]
