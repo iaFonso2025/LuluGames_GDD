@@ -1,15 +1,17 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769122279
+::res://::1769152967
 Banner.png::CompressedTexture2D::4197892013518413876::1769112133::1769112134::1::::<><><>0<>0<>ccf2bce5ba8d8a30b775de230c261c59<>res://.godot/imported/Banner.png-67b2d039aec229fd05c272481839a1ee.ctex::
+export_presets.cfg::TextFile::-1::1769124739::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::6676879588262483619::1768993990::1768994000::1::::<><><>0<>0<>fad723332ca94e6d2088f9c76a28ffb8<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1769123797::0::1::::<><><>0<>0<><>::
 ::res://data/::1769079490
 knight.tres::Resource/playerData::6915989903846907096::1769079490::0::1::::<><><>0<>0<><>::uid://bivo68d33e2qy::::res://data/playerData.gd
 playerData.gd::GDScript::2992190502357163972::1769079443::0::1::::playerData<>Resource<><>0<>0<><>::
-::res://escenas/::1769122279
-acciones.tscn::PackedScene::4327029413870693171::1769122295::0::1::::<><><>0<>0<><>::uid://bumo2bap2rdju::::res://scripts/acciones.gd
+::res://escenas/::1769123366
+acciones.tscn::PackedScene::4327029413870693171::1769123366::0::1::::<><><>0<>0<><>::uid://bumo2bap2rdju::::res://scripts/actions.gd
 arena.tscn::PackedScene::7133030802477782368::1769121887::0::1::::<><><>0<>0<><>::uid://b7jxdspwtlxdr::::res://escenas/mob.tscn<>uid://ikirhn3h7m44::::res://escenas/battle_scene.tscn<>uid://45o72qb2n76y::::res://escenas/player.tscn
 battle_scene.tscn::PackedScene::582671010112099031::1769109389::0::1::::<><><>0<>0<><>::uid://dry6err1jol8o::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Tileset/Tilemap_color2.png<>uid://45o72qb2n76y::::res://escenas/player.tscn<>uid://b2wbso377f0t8::::res://escenas/acciones.tscn<>uid://b7jxdspwtlxdr::::res://escenas/mob.tscn
-gameOver.tscn::PackedScene::837203322156267912::1769122277::0::1::::<><><>0<>0<><>::uid://cahdcjop4eopo::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/gameOver.png<>uid://cc1xyj5w5r3hp::::res://escenas/game_over.gd
+gameOver.tscn::PackedScene::837203322156267912::1769122277::0::1::::<><><>0<>0<><>::uid://cahdcjop4eopo::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/gameOver.png<>uid://cc1xyj5w5r3hp::::res://scripts/game_over.gd
 intro.tscn::PackedScene::2106862479309485128::1769122279::0::1::::<><><>0<>0<><>::uid://rjfjpqbyj6tt::::res://scripts/intro.gd<>uid://t3yolx0r7a43::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/Banner_Slots.png<>uid://dox700vawoe5b::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/sinFondo.png<>uid://c2jq6bclveatx::::res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/UI Elements/UI Elements/Banners/controles.png
 mob.tscn::PackedScene::4652445897729816283::1769101018::0::1::::<><><>0<>0<><>::uid://dpnxhp6iuuhe3::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Walk.png<>uid://3xvm4vvqif6s::::res://scripts/mob.gd<>uid://bp3pgiivlqpxa::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Idle.png<>uid://cmfrypn223e2i::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack01.png<>uid://d3c1eaxgqsthn::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Attack02.png<>uid://ibvjpc24daye::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Death.png<>uid://2hj6khncxkwb::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Orc/Orc with shadows/Orc-Hurt.png
 player.tscn::PackedScene::2098316424357809646::1769102516::0::1::::<><><>0<>0<><>::uid://d4cilhm2hqjor::::res://scripts/player.gd<>uid://dqbqa34p341ac::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Walk.png<>uid://76ygpw3kn50p::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack01.png<>uid://b00wj2dogwpfd::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack02.png<>uid://br7ahenkygyom::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Attack03.png<>uid://rp1huvfueh1b::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Death.png<>uid://cgidhfekrvpo3::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Hurt.png<>uid://caw0yx7n3ieou::::res://images/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier with shadows/Soldier-Idle.png
@@ -1051,10 +1053,10 @@ Warrior_Attack2.png::CompressedTexture2D::6900807307563827103::1769068976::17690
 Warrior_Guard.png::CompressedTexture2D::4025446382309163213::1769068977::1769068979::1::::<><><>0<>0<>d3a8b8f1db58675f6b76f43a9b5ba8a5<>res://.godot/imported/Warrior_Guard.png-1ccf9bbed7034e44e66a3f59b1ec3f1b.ctex::
 Warrior_Idle.png::CompressedTexture2D::1833992179384928278::1769068977::1769068979::1::::<><><>0<>0<>95b2ddc537473cbdc39dd29eb3d9c33e<>res://.godot/imported/Warrior_Idle.png-cd5bac587427426e9e966673b2a0d6e6.ctex::
 Warrior_Run.png::CompressedTexture2D::6502754813022215134::1769068977::1769068979::1::::<><><>0<>0<>686f823b1115fbeebc87e4b00e40fcca<>res://.godot/imported/Warrior_Run.png-2d54e0e4e6f51a3a9af08367a52f38b1.ctex::
-::res://scripts/::1769122279
-acciones.gd::GDScript::3815868397078263274::1769122171::0::1::::<>Control<><>0<>0<><>::
-game_over.gd::GDScript::4968332746249821205::1769122171::0::1::::<>Control<><>0<>0<><>::
-intro.gd::GDScript::1212110211387085437::1769122171::0::1::::<>Control<><>0<>0<><>::
-manager.gd::GDScript::1123327384995004798::1769122171::0::1::::<>Node<><>0<>0<><>::
-mob.gd::GDScript::2014066353177129572::1769122171::0::1::::<>CharacterBody2D<><>0<>0<><>::
-player.gd::GDScript::9199373039203301985::1769122171::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://scripts/::1769123179
+actions.gd::GDScript::3815868397078263274::1769123179::0::1::::<>Control<><>0<>0<><>::
+game_over.gd::GDScript::4968332746249821205::1769123179::0::1::::<>Control<><>0<>0<><>::
+intro.gd::GDScript::1212110211387085437::1769123179::0::1::::<>Control<><>0<>0<><>::
+manager.gd::GDScript::1123327384995004798::1769123179::0::1::::<>Node<><>0<>0<><>::
+mob.gd::GDScript::2014066353177129572::1769123179::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::9199373039203301985::1769123179::0::1::::<>CharacterBody2D<><>0<>0<><>::

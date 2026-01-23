@@ -36,7 +36,7 @@ layout_mode = 2
 texture_filter = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 8
-text = "Ataque liguero"
+text = "Ataque ligero"
 
 [node name="B_atack_2" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer"]
 texture_filter = 1
