@@ -1,0 +1,9 @@
+res://data/knight.tres::64d6f69a701f9c24d4fda8a721fcfdac::1769079490::res://.godot/exported/133200997/export-d929b43a88fceccac45367adf1185c4f-knight.res
+res://escenas/acciones.tscn::80f0c775a1721eab0f1fd264f76a9f0b::1769123366::res://.godot/exported/133200997/export-a15cfcd4060df22f0c10c006f84b9b14-acciones.scn
+res://escenas/arena.tscn::7b358e32f47d90f3a9c3001a322a3fb2::1769121887::res://.godot/exported/133200997/export-651da5087f9d81f39683f0c06c0a3a8f-arena.scn
+res://escenas/battle_scene.tscn::af8f7c37dff270222ee82919e4055125::1769109389::res://.godot/exported/133200997/export-914602210acd80b82a810f90bf22dbb0-battle_scene.scn
+res://escenas/gameOver.tscn::b560d85bce283a9966d706a2cfe10e42::1769122277::res://.godot/exported/133200997/export-1f27f45d464436857c5ce2f53eaf2857-gameOver.scn
+res://escenas/intro.tscn::f9d8224d6dc6a9169e478f6cde6c1317::1769122279::res://.godot/exported/133200997/export-62dbc848291ce3a5a34d1ec46c3d2000-intro.scn
+res://escenas/mob.tscn::c562cf5e0ff7a7b3993967b3768913c9::1769101018::res://.godot/exported/133200997/export-8ad24d93cbe3df7fb5b207ac9e50f06c-mob.scn
+res://escenas/player.tscn::b85c87ce9f482053aca270753f6839b6::1769102516::res://.godot/exported/133200997/export-7087a6050b3143478dd473d7d2e45c8a-player.scn
+res://escenas/winner.tscn::c351bf0f22f53660ad7b79b2a86aa29b::1769121860::res://.godot/exported/133200997/export-85170ddd5a69b5aaca734d82d8fb92a2-winner.scn

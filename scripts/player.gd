@@ -121,7 +121,7 @@ func morir():
 	await get_tree().create_timer(4.0).timeout
 	
 	# Change back to the arena scene
-	get_tree().change_scene_to_file("res://escenas/arena.tscn") # scene name
+	get_tree().change_scene_to_file("res://escenas/gameOver.tscn") # scene name
 	
 func ejecutar_ataque(id_ataque: int):
 	# Build the attack animation name using the attack ID
