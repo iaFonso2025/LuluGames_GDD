@@ -1,14 +1,20 @@
-[gd_scene load_steps=8 format=3 uid="uid://c8vj8fkaca0cy"]
+[gd_scene load_steps=11 format=3 uid="uid://c8vj8fkaca0cy"]
 
+[ext_resource type="Texture2D" uid="uid://ccbpryywo5lio" path="res://images/fondo.png" id="1_fvw1q"]
 [ext_resource type="PackedScene" uid="uid://b7jxdspwtlxdr" path="res://escenas/mob.tscn" id="1_sym82"]
 [ext_resource type="PackedScene" uid="uid://ikirhn3h7m44" path="res://escenas/battle_scene.tscn" id="2_fvw1q"]
 [ext_resource type="PackedScene" uid="uid://45o72qb2n76y" path="res://escenas/player.tscn" id="2_qxv7v"]
+[ext_resource type="AudioStream" uid="uid://c5ffkfowtub88" path="res://sound/fantasy-rpg-exploration-v2-461303.mp3" id="5_ao7qd"]
 
 [sub_resource type="GDScript" id="GDScript_ow6xx"]
 script/source = "extends Node2D
 "
 
 [sub_resource type="QuadMesh" id="QuadMesh_vdlk5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_ao7qd"]
+specular_texture = ExtResource("1_fvw1q")
+specular_color = Color(0.9683791, 5.4869056e-06, 0.5968519, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ow6xx"]
 size = Vector2(365.875, 12.25)
@@ -26,6 +32,12 @@ position = Vector2(0, 37)
 position = Vector2(52.249992, -118.43751)
 scale = Vector2(363.50003, 237.12502)
 mesh = SubResource("QuadMesh_vdlk5")
+texture = SubResource("CanvasTexture_ao7qd")
+
+[node name="Fondo" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(53.00002, -118.12501)
+scale = Vector2(0.2932692, 0.28876203)
+texture = ExtResource("1_fvw1q")
 
 [node name="colision" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(53, -230)
@@ -44,7 +56,12 @@ position = Vector2(229, -82)
 shape = SubResource("RectangleShape2D_gvmcd")
 
 [node name="mob" parent="." instance=ExtResource("1_sym82")]
-position = Vector2(193, 8)
+position = Vector2(152, -1)
 battle_scene = ExtResource("2_fvw1q")
 
 [node name="player" parent="." instance=ExtResource("2_qxv7v")]
+position = Vector2(11, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_ao7qd")
+autoplay = true

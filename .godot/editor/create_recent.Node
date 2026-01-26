@@ -1,3 +1,4 @@
+AudioStreamPlayer      - Matches the "sound" keyword.
 Camera2D
 Label
 TextureRect
@@ -11,4 +12,3 @@ AnimationPlayer
 Sprite2D
 CharacterBody2D
 CanvasLayer
-Panel
