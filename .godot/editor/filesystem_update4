@@ -1,2 +1,7 @@
-res://escenas/acciones.tscn
+res://escenas/arena.tscn
+res://escenas/player.tscn
+res://escenas/battle_scene.tscn
 res://scripts/player.gd
+res://escenas/mob.tscn
+res://scripts/mob.gd
+res://scripts/manager.gd

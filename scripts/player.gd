@@ -3,6 +3,8 @@ extends CharacterBody2D
 # Movement speed of the player
 const SPEED = 300.0
 
+
+
 # Reference to the player's AnimationPlayer
 @onready var animationPlayer = $AnimationPlayer
 
@@ -124,26 +126,28 @@ func morir():
 	get_tree().change_scene_to_file("res://escenas/gameOver.tscn") # scene name
 	
 func ejecutar_ataque(id_ataque: int):
-	# Build the attack animation name using the attack ID
-	var nombre_anim = "ataque" + str(id_ataque)
+	# 1. AUDIO: Intentamos sonar el audio sin romper el juego
+	# get_node_or_null evita que el script se detenga si no encuentra "Attack3"
+	var sonido = get_node_or_null("Attack" + str(id_ataque))
+	if sonido:
+		sonido.play()
+	else:
+		print("Aviso: El nodo de sonido Attack", id_ataque, " no existe, pero seguimos.")
+
+	# 2. ANIMACIÓN: Definimos el nombre
+	var nombre_anim = "Attack" + str(id_ataque)
 	
+	# Verificamos si existe antes de darle a play
 	if animationPlayer.has_animation(nombre_anim):
-		# Block other animations while attacking
 		atacando = true
-		
-		# Stop any previous animation
 		animationPlayer.stop()
-		
-		# Play the attack animation
 		animationPlayer.play(nombre_anim)
-		print("Visually executing: ", nombre_anim)
 		
-		# Wait until the attack animation finishes
 		await animationPlayer.animation_finished
 		
-		# Unlock animations and return to idle
 		atacando = false
 		animationPlayer.play("idle")
 	else:
-		# Error message if the animation does not exist
-		print("Error: Animation does not exist ", nombre_anim)
+		# Si falla la 3, esto te dirá EXACTAMENTE cómo se llaman tus animaciones
+		print("Error: No existe '", nombre_anim, "'. Animaciones reales: ", animationPlayer.get_animation_list())
+		atacando = false

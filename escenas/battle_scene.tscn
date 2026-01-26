@@ -1,9 +1,10 @@
-[gd_scene load_steps=13 format=4 uid="uid://ikirhn3h7m44"]
+[gd_scene load_steps=14 format=4 uid="uid://ikirhn3h7m44"]
 
 [ext_resource type="Texture2D" uid="uid://dry6err1jol8o" path="res://images/Tiny Swords (Free Pack)/Tiny Swords (Free Pack)/Terrain/Tileset/Tilemap_color2.png" id="1_y7ale"]
 [ext_resource type="PackedScene" uid="uid://45o72qb2n76y" path="res://escenas/player.tscn" id="2_mcooq"]
 [ext_resource type="PackedScene" uid="uid://b2wbso377f0t8" path="res://escenas/acciones.tscn" id="3_5k3ku"]
 [ext_resource type="PackedScene" uid="uid://b7jxdspwtlxdr" path="res://escenas/mob.tscn" id="3_npaif"]
+[ext_resource type="AudioStream" uid="uid://cd4smbinc6wix" path="res://sound/battle-of-the-dragons-8037.mp3" id="5_5k3ku"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wh160"]
 texture = ExtResource("1_y7ale")
@@ -799,5 +800,10 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 6
 theme_override_styles/background = SubResource("StyleBoxFlat_tc0ev")
 theme_override_styles/fill = SubResource("StyleBoxFlat_4ybvi")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_5k3ku")
+volume_db = -8.587
+autoplay = true
 
 [connection signal="gui_input" from="player/Panel" to="player" method="_on_panel_gui_input"]
