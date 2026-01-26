@@ -55,13 +55,11 @@ Combat starts automatically when the player collides with an enemy.
 - Name  
 - Maximum health  
 - Current health  
-- Number of potions  
 
 **Actions:**
 - Light attack  
 - Heavy attack  
 - Ultimate attack  
-- Heal (consumes one potion)  
 
 ---
 
