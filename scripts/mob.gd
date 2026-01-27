@@ -96,17 +96,17 @@ func _on_detection_area_body_entered(body: Node2D) -> void:
 			print("Error: 'battle_scene' has not been assigned in the Mob inspector")
 
 func ejecutar_ataque_visual(nombre_anim: String):
-	# 1. Intentamos reproducir el sonido correspondiente
-	# Si nombre_anim es "orc_attack1", buscará el nodo de sonido "orc_attack1"
+	# 1. Try reproduce sound
+	# If nombre_anim es "orc_attack1", will search sound node "orc_attack1"
 	var nodo_sonido = get_node_or_null(nombre_anim)
 	
 	if nodo_sonido:
 		nodo_sonido.play()
 	else:
-		# Imprime un aviso en la consola si el nodo no existe, pero no rompe el juego
+		# print an advice on console
 		print("Aviso: No se encontró el nodo de sonido: ", nombre_anim)
 
-	# 2. Lógica de animación original
+	# 2. Animation logic
 	if animationOrc.has_animation(nombre_anim):
 		atacando = true
 		
