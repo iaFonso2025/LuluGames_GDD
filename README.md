@@ -124,3 +124,4 @@ To develop a functional turn-based RPG prototype demonstrating skills in game de
 
 ---
 **This document describes the game design, mechanics, and overall structure of the project.**
+**itch:** https://iafonso.itch.io/orc-clash
