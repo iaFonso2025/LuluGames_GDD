@@ -126,18 +126,18 @@ func morir():
 	get_tree().change_scene_to_file("res://escenas/gameOver.tscn") # scene name
 	
 func ejecutar_ataque(id_ataque: int):
-	# 1. AUDIO: Intentamos sonar el audio sin romper el juego
-	# get_node_or_null evita que el script se detenga si no encuentra "Attack3"
+	# 1. AUDIO: 
+	# get_node_or_null prevents the script from stopping if it does not find "Attack3"
 	var sonido = get_node_or_null("Attack" + str(id_ataque))
 	if sonido:
 		sonido.play()
 	else:
 		print("Aviso: El nodo de sonido Attack", id_ataque, " no existe, pero seguimos.")
 
-	# 2. ANIMACIÓN: Definimos el nombre
+	# 2. ANIMATION: We define the name
 	var nombre_anim = "Attack" + str(id_ataque)
 	
-	# Verificamos si existe antes de darle a play
+	# We check if it exists before pressing play
 	if animationPlayer.has_animation(nombre_anim):
 		atacando = true
 		animationPlayer.stop()
@@ -148,6 +148,6 @@ func ejecutar_ataque(id_ataque: int):
 		atacando = false
 		animationPlayer.play("idle")
 	else:
-		# Si falla la 3, esto te dirá EXACTAMENTE cómo se llaman tus animaciones
+		# If option 3 fails, this will tell you EXACTLY what your animations are called.
 		print("Error: No existe '", nombre_anim, "'. Animaciones reales: ", animationPlayer.get_animation_list())
 		atacando = false
